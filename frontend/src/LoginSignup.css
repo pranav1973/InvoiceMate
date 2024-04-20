@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+
+body, input, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+input:focus, button:hover {
+  transform: scale(1.05);
+}
+
+a, button, input:focus {
+  outline: 3px solid #590fb7;
+}
+
+button {
+  margin-top: 25px; /* Gives space between form fields and button */
+}
+
+
+/* Background */
+.login-bg {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-video{
+  animation: fadeInUp 0.8s ease;
+}
+
+/* Main Container */
+.loginsignup-container {
+  width: 40rem;
+  max-width: 90%; /* Adjusted max-width for better responsiveness */
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 15px; /* Increased border radius for a softer look */
+  box-shadow: 0 15px 35px rgba(131, 25, 135, 0.25), 0 5px 15px rgba(0, 0, 0, 0.15);
+  padding: 3rem; /* Increased padding for better spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeInUp 0.8s ease; /* Fade in animation */
+  backdrop-filter: blur(10px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Heading */
+.loginsignup-container h1 {
+  margin: 30px 0; /* Increased margin for better separation */
+  font-size: 3.5rem; /* Larger font size for heading */
+  font-weight: bold;
+  color: #590fb7; /* Purple accent color */
+  text-align: center; /* Center align the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add text shadow for depth */
+}
+
+/* Form Fields */
+.loginsignup-fields label {
+  font-size: 1.8rem; /* Slightly larger font size for labels */
+  color: #4a4a4a; /* Darker text color for better contrast */
+}
+
+.loginsignup-fields input {
+  height: 60px; /* Reduced height for a sleeker look */
+  width: 100%;
+  padding: 0 25px; /* Increased horizontal padding for better input spacing */
+  border: 2px solid #c9c9c9; /* Thicker border for better visibility */
+  outline: none;
+  color: #4a4a4a;
+  font-size: 1.6rem;
+  border-radius: 8px; /* Rounded corners for inputs */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+  margin-top: 20px;
+  margin-bottom: 15px;  /* Provides space between fields */
+}
+
+.loginsignup-fields input:focus {
+  border-color: #590fb7; /* Highlight border color on focus */
+}
+
+/* Submit Button */
+.loginsignup-container button {
+  width: 100%;
+  height: 60px; /* Reduced height for consistency */
+  color: white;
+  background: linear-gradient(to top right, #ff0076, #590fb7);
+  margin-top: 40px; /* Increased margin for better separation */
+  border: none;
+  font-size: 1.8rem; /* Larger font size for button text */
+  font-weight: bold; /* Bold font weight for emphasis */
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease; /* Smooth hover effect */
+  animation: slideIn 0.8s ease; /* Slide in animation */
+}
+
+.loginsignup-container button:hover {
+  background: linear-gradient(to top right, #ff0076, #ff4141);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Login Link */
+.loginsignup-login {
+  margin-top: 30px; /* Increased margin for better separation */
+  color: #4a4a4a; /* Darker text color for better contrast */
+  font-size: 1.6rem;
+  font-weight: bold;
+  animation: fadeInUp 0.8s ease; /* Fade in animation */
+}
+
+.loginsignup-login span {
+  color: #ff4141;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Additional Styles */
+.loginsignup-container form {
+  width: 100%; /* Ensure form takes full width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginsignup-container form > *:not(:last-child) {
+  margin-bottom: 20px; /* Add margin between form elements */
+}
+
+.loginsignup-container button:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.loginsignup-container button:disabled {
+  opacity: 0.7; /* Reduce opacity for disabled button */
+  cursor: not-allowed; /* Change cursor for disabled button */
+}
+
+
+
