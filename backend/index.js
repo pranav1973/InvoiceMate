@@ -15,7 +15,7 @@ app.use(cors({
 
 //Datatabse cnncn with monodb
 
-mongoose.connect("mongodb+srv://pranav:123@cluster0.vxw6n8d.mongodb.net/invoice")
+mongoose.connect("your mongodb atlas uri")
 
 //API Creation
 
